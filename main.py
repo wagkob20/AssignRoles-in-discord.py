@@ -18,7 +18,7 @@ async def on_ready():
 @commands.has_permissions(manage_roles=True)
 async def asignRole(ctx, roleId : discord.Role):
     server = client.get_guild(SERVER_ID)
-    role2 = discord.utils.get(server.roles, id = ROLE_ID) #Role, which gets asigned to all people with the pinged role
+    role2 = discord.utils.get(server.roles, id = ROLE_ID) #Role, which gets assigned to all people with the pinged role
     print("Role asigned to: ")
     for guild in client.guilds:
         for member in guild.members:
